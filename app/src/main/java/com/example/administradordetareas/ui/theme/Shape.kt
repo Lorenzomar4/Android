@@ -1,4 +1,4 @@
-package com.example.articulosdecompose.ui.theme
+package com.example.administradordetareas.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

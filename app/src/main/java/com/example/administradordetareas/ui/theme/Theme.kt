@@ -1,4 +1,4 @@
-package com.example.articulosdecompose.ui.theme
+package com.example.administradordetareas.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -28,7 +28,7 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun ArticulosDeComposeTheme(
+fun AdministradorDeTareasTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

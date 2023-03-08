@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.articulosdecompose'
+    namespace 'com.example.administradordetareas'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.articulosdecompose"
+        applicationId "com.example.administradordetareas"
         minSdk 21
         targetSdk 33
         versionCode 1
