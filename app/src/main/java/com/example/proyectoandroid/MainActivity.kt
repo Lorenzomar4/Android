@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role.Companion.Image
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -33,8 +34,15 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                   // BirthdayGreetingWithText("feliz cumpleaños","- por Raul")
-                    BirthdayGreetingWithImage("Happy Birthday Sam!", "- from Emma")
+                    /*Birthday app
+
+                    BirthdayGreetingWithImage(stringResource(R.string.happy_birthday_text),
+                        stringResource(R.string.signature_text))
+
+                     */
+
+                    BirthdayGreetingWithImage(stringResource(R.string.happy_birthday_text),
+                        stringResource(R.string.signature_text))
                 }
             }
         }
@@ -49,15 +57,9 @@ fun BirthdayGreetingWithImage(message: String, from: String, modifier: Modifier 
             contentDescription = null ,
             contentScale = ContentScale.Crop
         )
-        BirthdayGreetingWithText("feliz cumpleaños","- por Raul")
+        BirthdayGreetingWithText(message,from)
     }
 }
-
-@Composable
-fun Greeting(name: String) {
-        Text(text = "Hola mi nombre es $name!",modifier = Modifier.padding(24.dp))
-}
-
 
 @Composable
 fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier = Modifier){
@@ -76,12 +78,13 @@ fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier =
                 fontSize = 26.sp ,
                 modifier = Modifier.padding(
                     top = 16.dp,
-                    bottom = 30.dp
+                    bottom = 10.dp
                 )
             )
             Text(
                 text = from,
-                fontSize = 16.sp
+                fontSize = 16.sp,
+                modifier = Modifier.align(alignment = Alignment.End)
             )
         }
 }
@@ -89,7 +92,6 @@ fun BirthdayGreetingWithText(message: String, from: String, modifier: Modifier =
 @Composable
 fun DefaultPreview() {
     ProyectoAndroidTheme {
-      //  BirthdayGreetingWithText("feliz cumpleaños","- por Raul")
-        BirthdayGreetingWithImage("Happy Birthday Sam!", "- from Emma")
+        BirthdayGreetingWithImage(stringResource(R.string.happy_birthday_text), stringResource(R.string.signature_text))
     }
 }
