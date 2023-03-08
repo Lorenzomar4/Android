@@ -1,4 +1,4 @@
-package com.example.proyectoandroid.ui.theme
+package com.example.articulosdecompose.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -28,7 +28,7 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun ProyectoAndroidTheme(
+fun ArticulosDeComposeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

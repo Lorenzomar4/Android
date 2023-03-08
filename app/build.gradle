@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.proyectoandroid'
+    namespace 'com.example.articulosdecompose'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.proyectoandroid"
+        applicationId "com.example.articulosdecompose"
         minSdk 21
         targetSdk 33
         versionCode 1
