@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CartaDePresentacion</string>
+    <string name="azulOscFondo">#000016</string>
+    <string name="Nombre">Lorenzo Martinez</string>
+    <string name="Desc">Android Developer Extraoirdaire</string>
+    <string name="numeroDeCelular">1169552874</string>
+    <string name="shareDesc">\@LorenzoMar3</string>
+    <string name="emailString">Lorenzomar7044@gmail.com</string>
+</resources>
